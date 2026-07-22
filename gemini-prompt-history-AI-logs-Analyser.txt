@@ -1,0 +1,181 @@
+================================================================================
+                    AI COLLABORATION & PROMPT HISTORY LOG
+   Project: AI-Powered Application Load Balancer (ALB) Log Analyzer
+   Engineer: Rayan Ahmed
+================================================================================
+
+PROMPT 1:
+--------------------------------------------------------------------------------
+Give at least 600 lines Log and increase all the metrics that you have set 
+example 
+IP 99.88.77.66 (High 5XX Ratio): Fires 223 502 errors and only one 200 success against a normal, healthy-looking API path. This tests the 5XX Ratio ML constraint.
+IP 203.0.113.42 (DDoS Lexical Spam): Fires 196 500 errors against scrambled, consonant-heavy paths (/shitttt, /helluhbicdwhoew, /mfhihjbkcjwb, /bitchhhhh). This tests the Consonant-to-Vowel and Keyword Whitelist algorithms.
+IP 198.51.100.99 (High-Entropy Targeted Hit): Fires 96 504 timeouts with 0 successes against /97898ukjhicwdhbkwchon. This tests the Length-Normalized Shannon Entropy math.
+
+
+PROMPT 2:
+--------------------------------------------------------------------------------
+Make sure you are giving me the python code to generate the file as per below logs column format 
+https 2026-07-10T23:55:00.688429Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.212.255.180:45162 10.23.107.252:8000 0.001 0.001 0.000 200 200 1110 3099 "OPTIONS https://tb.tapi.videoready.tv:443/homescreen-client/pub/api/v3/rail?id=16767 HTTP/1.1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.6533.88 Safari/537.36" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-5c938ec320/61b1a6a471df66cc "Root=1-6a518654-3c18aba61bedbee4689094fd" "tb.tapi.videoready.tv" "session-reused" 6 2026-07-10T23:55:00.686000Z "waf,forward" "-" "-" "10.23.107.252:8000" "200" "-" "-" TID_adf57292c5724d47971cf37c3256b933 "-" "-" "-"
+https 2026-07-10T23:55:00.692529Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.212.255.180:45162 10.23.104.95:8000 0.001 0.001 0.000 200 200 1110 3099 "OPTIONS https://tb.tapi.videoready.tv:443/homescreen-client/pub/api/v3/rail?id=18124 HTTP/1.1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.6533.88 Safari/537.36" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-5c938ec320/61b1a6a471df66cc "Root=1-6a518654-7addd89f65c67da0425ef23f" "tb.tapi.videoready.tv" "session-reused" 6 2026-07-10T23:55:00.690000Z "waf,forward" "-" "-" "10.23.104.95:8000" "200" "-" "-" TID_adf57292c5724d47971cf37c3256b933 "-" "-" "-"
+https 2026-07-10T23:55:00.859119Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.214.85.165:37106 10.23.98.18:8000 0.001 0.107 0.000 200 200 1290 6091 "POST https://tb.tapi.videoready.tv:443/ta-recommendation/api/v1/binge/guest/recommend/COMMON_RELATED_UC_MORE_LIKE_TV_SHOW?contentType=TV_SHOWS&showType=VOD&id=2204077&layout=LANDSCAPE&provider=Zee5&max=10 HTTP/1.1" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-a9c0409ec4/568e72e401ee0bec "Root=1-6a518654-29e60b7e37307ac968b2facd" "tb.tapi.videoready.tv" "session-reused" 1 2026-07-10T23:55:00.750000Z "waf,forward" "-" "-" "10.23.98.18:8000" "200" "-" "-" TID_64145dc5e2701544b062179fce814cd3 "-" "-" "-"
+https 2026-07-10T23:55:00.982359Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.212.255.180:45162 10.23.105.197:8000 0.001 0.001 0.000 200 200 1221 3099 "OPTIONS https://tb.tapi.videoready.tv:443/ta-recommendation/api/v1/binge/guest/recommend/B_HM_UC_MOVIES_FOR_YOU?max=30&layout=PORTRAIT&pageType=DONGLE_HOMEPAGE&railId=4946 HTTP/1.1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.6533.88 Safari/537.36" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-a9c0409ec4/568e72e401ee0bec "Root=1-6a518654-6c62d8a23c7f932951074dd2" "tb.tapi.videoready.tv" "session-reused" 1 2026-07-10T23:55:00.980000Z "waf,forward" "-" "-" "10.23.105.197:8000" "200" "-" "-" TID_adf57292c5724d47971cf37c3256b933 "-" "-" "-"
+https 2026-07-10T23:55:01.009574Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.214.85.165:37106 10.23.101.118:8000 0.001 0.001 0.000 200 200 1017 3099 "OPTIONS https://tb.tapi.videoready.tv:443/homescreen-client/pub/api/v1/fetch/seo/template/MOVIES/184909 HTTP/1.1" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-5c938ec320/61b1a6a471df66cc "Root=1-6a518655-1ccb2bcb2e1cbd73030019a9" "tb.tapi.videoready.tv" "session-reused" 6 2026-07-10T23:55:01.007000Z "waf,forward" "-" "-" "10.23.101.118:8000" "200" "-" "-" TID_64145dc5e2701544b062179fce814cd3 "-" "-" "-"
+https 2026-07-10T23:55:01.180354Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.212.255.180:45162 10.23.98.38:8000 0.001 0.186 0.000 200 200 1447 8530 "POST https://tb.tapi.videoready.tv:443/ta-recommendation/api/v1/binge/guest/recommend/HOME_UC_NEW_RELEASES?max=30&layout=PORTRAIT&pageType=DONGLE_HOMEPAGE&railId=79667 HTTP/1.1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.6533.88 Safari/537.36" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-a9c0409ec4/568e72e401ee0bec "Root=1-6a518654-0cbfe23d5f7b9c8a229029e1" "tb.tapi.videoready.tv" "session-reused" 1 2026-07-10T23:55:00.993000Z "waf,forward" "-" "-" "10.23.98.38:8000" "200" "-" "-" TID_adf57292c5724d47971cf37c3256b933 "-" "-" "-"
+https 2026-07-10T23:55:01.208020Z app/k8s-producti-publicop-917c54da18/420e73b5927a5d49 23.214.85.165:37106 10.23.97.81:8000 0.001 0.001 0.000 200 200 1073 3099 "OPTIONS https://tb.tapi.videoready.tv:443/content-subscriber-detail/api/content/info/vod/2858776?subscriberId=undefined&profileId=undefined HTTP/1.1" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:ap-south-1:281176377529:targetgroup/k8s-producti-svckongb-5c938ec320/61b1a6a471df66cc "Root=1-6a518655-39c31e4a5de2adf3417af055" "tb.tapi.videoready.tv" "session-reused" 6 2026-07-10T23:55:01.205000Z "waf,forward" "-" "-" "10.23.97.81:8000" "200" "-" "-" TID_64145dc5e2701544b062179fce814cd3 "-" "-" "-"
+
+Also it should in in extension .log.gz
+
+
+PROMPT 3:
+--------------------------------------------------------------------------------
+In the second module 5XX vs IP The failure Env set in my lambda is 0.5 which means it should also retun the IP 99.88.77.66 since it has 1/12 ratio of 2XX/5XX that is 0.08333
+Why is it not happeming?
+[Attached Screenshots: Top IPs by 5XX Errors report chart & Lambda Environment variables configuration]
+
+
+PROMPT 4:
+--------------------------------------------------------------------------------
+Working Perfectly now and this marks the completion of the project.
+Now ONE Last favour required from your end 
+
+I have to present this to client and my internal devops team so I will Give prompt to Claude AI to create a Master PPT with all the Organised information that you will provide me. 
+
+What I require from you -
+Provide me all the below information that we used to create the project organised in form of Slides and headings and Subheadings so that I can follow along the slide while explaining the AI automation and flow.
+
+Resources Used -
+Lambda - Main Code
+API Gateway - For invoking Lambda with payload
+S3 - Lambda Layer Storage 
+Cloudwatch Logs - For storing Lambda logs
+IAM - for providing role to Lambda for publishing to Cloudwatch and S3 logs access
+
+Lambda Information
+- Python Version used 
+- Lambda Layer Used and which modules are there in that Lambda and what are they being used for in the code.
+- Lambda configuration (Leave this Blank)
+- Lambda files names and their purpose ai + graph + main lambda file 
+- All the Enviroment Variables and their purpose and their default value if not provided in the Lambda env (See screenshot for the ENV Variables list)
+
+Automation Architecture and Flow - 
+Leave this blank I will add my self in the Slide
+
+Lambda Features - 
+Time conversion (Explain the code chunck with example how conversion is happening)
+Time Limit restriction to avoid un necessary processing (Explain using env we have set the time limit to avoid lambda timeout this can be adjusted as per nature of LB in diff project depending upon the logs size)
+Use of api GATEWAY (How we have used API GATEWAY to invoke the Lambda safely by passing the required 3 payloads S3 location and Start/End time also explain if any field missing what will code return and explain the validation)
+Secure use using api key (Mention when the project will be deployed in real production on clienst infra an API Key will also be created and shared among the Cloud engineers so that they can use it in Curl command so that only authorised person can use the lambda via API GATEWAY invokation)
+Configurable Lambda using ENV variables (Explain how Lambda is made fully configurable from just changing the Env variables)
+
+Working Output of the Automation - (The mail breakdown and explaination of all the 4 modules I will add the screenshots of modules myself you just give content)
+- Top Box Execution Summary and Traffic Metrics
+- Module 1  Top Offending IPs (Table + Graph + AI Summary)
+- Module 2 Top IPs by 5XX Errors  (Table + Graph + AI Summary)
+- Module 3 Top Latency IPs and URLs (Table + Graph + AI Summary)
+- Module 4 URLs with Top 5XX Errors (Table + Graph + AI Summary)
+
+Working and AI Implimentation -
+
+#1 Explain the IP request surge mechanism (Also add here which module is required in the lambda layer for this mechanism to work)
+The Machine Learning Approach: Isolation Forest
+Since we do not have historical data to "train" a model on what a DDoS attack looks like, we must use Unsupervised Learning. The industry standard for this is the Isolation Forest algorithm from the scikit-learn library.
+How it will work in your Lambda:
+Time-Bucketing (Feature Engineering): Instead of just counting total hits, we will group the logs into 1-minute intervals. We will feed the model an array of data like: [IP, Minute, Request_Count].
+The ML Evaluation: The Isolation Forest will analyze the entire batch. It builds "trees" to isolate data points. If an IP suddenly spikes from 10 requests to 300 requests in a single minute, the model will instantly isolate it as a statistical outlier.
+The Output: The model assigns a score of 1 (Normal) or -1 (Anomaly).
+The English Translation: We will catch any -1 scores and use Python to dynamically generate the exact sentence: "There is a sudden increase in the traffic from the below IP(s)..."
+
+#2 Fake/Suspicious URL validation using AI analysis - (Here also mention which module is required in the lambda layer for this mechanism to work )
+Because your legitimate API endpoints are long and contain a high variety of characters, numbers, and query parameters (like ?id=79890&limit=20&Offset=0), the Shannon Entropy algorithm calculated a high "randomness" score. When it paired that high score with the 0 2XX count, it generated a false positive, mistaking a complex API path for a scrambled DDoS string.
+Here is exactly how we can improve the AI logic to make it highly accurate and eliminate these false positives:
+1. Length-Normalized Entropy (The Math Fix)
+Instead of just looking at the total randomness of the string, the algorithm needs to divide the entropy score by the length of the string.
+A short string with high randomness (e.g., /qwxz9) is highly suspicious.
+A long string with high randomness (e.g., /auth-service-binge/v2/oauth/...) is completely normal. Normalizing the score will fix the mathematical skew.
+2. Isolate the URL Path (Strip the Noise)
+Right now, the model is reading the entire line: https://tb.tapi.videoready.tv:443/homescreen-client/pub/api/.... The https, the domain, and the query parameters (?id=...) add massive amounts of baseline randomness. I will update the code to use Python's urllib.parse to strip away the domain and query parameters, forcing the AI to judge only the core structural path (e.g., /homescreen-client/pub/api/v4/rail/seeAll).
+3. Lexical Keyword Heuristics (The Human Element)
+We can inject a "whitelist" of common architectural terms directly into the AI's scoring matrix. If the URL path contains structural keywords like api, v1, v2, oauth, token, auth, login, or offset, the model will artificially drop its threat score. Scrambled DDoS hits like /ioyhcwn9iy[c0wuc0 do not contain clean English architectural words.
+4. Consonant-to-Vowel Ratio Check
+Scrambled, malicious strings (/shittttttt, /bitchhhhh, /dfghjkll) almost always fail basic English lexical structure. By calculating the ratio of vowels to consonants, the algorithm can easily distinguish between a human-readable API path and a random keyboard smash.
+By combining the structural parsing, the keyword heuristics, and the normalized math, the AI will easily ignore your failing API endpoints and only trigger on genuine malicious garbage.
+
+Further Add Ons Planned - (Will impleiment below Adds ons in future)
+Status code distribution overall (2xx/3xx/4xx/5xx % breakdown) — gives the report a quick "health at a glance" summary before diving into specifics
+Top 4xx URLs — you have 5xx covered, but 4xx spikes (esp. 404s or 401/403) often reveal scanning/probing behavior or broken client integrations — different signal than 5xx
+Request volume trend over time (requests per minute/5-min bucket across the range) — helps spot whether it was a sudden spike vs. sustained load, and roughly when within the range things went wrong
+Top User-Agents — bots/scanners often have telltale or missing User-Agent strings; useful alongside the IP reputation check for corroborating "is this an attack"
+Target group / backend health signal — ALB logs include target_status_code separately from ELB status_code; a mismatch (ELB 200 but target 5xx handled by retry, or ELB 504 with empty target) tells you if it's an LB-level timeout vs. actual app error — very useful for RCA
+Latency percentiles per top URL (not just single top-latency requests) — p50/p90/p99 per endpoint is more actionable than just "slowest individual requests," since one outlier request isn't as meaningful as "this endpoint is consistently slow"
+SSL/TLS or connection errors (ALB logs have error_reason field for cases with no valid HTTP response) — separate bucket from application 5xx, useful for RCA
+
+Feedback and Suggestions - 
+Any Feedback suggestions
+[Attached Screenshot: Full Lambda Environment Variables table]
+
+
+PROMPT 5:
+--------------------------------------------------------------------------------
+Can you explain in quick shot 
+What is numpy, scikit-learn usage in the model 
+
+
+PROMPT 6:
+--------------------------------------------------------------------------------
+So we have used this scikit-learn in flagging the abnormal traffic surge from an IP right ?
+So then what AI we have used to check the URL in the Module 4 to analyse fake URL hits
+
+
+PROMPT 7:
+--------------------------------------------------------------------------------
+How is Shanon Entropy checkinhg for randomnness in the URL ?
+
+
+PROMPT 8:
+--------------------------------------------------------------------------------
+One issue I noticed that needs to be improved in Module 4 -
+
+There are other Suspicious URL's as well but in AI analysis box it is giving only 1 
+Is it bound to give one URL ?
+[Attached Screenshot: URLs with Top 5XX Errors report box showing a single flagged URL]
+
+
+PROMPT 9:
+--------------------------------------------------------------------------------
+Can you give me the monthly Estimated Cost  if we run this automation with below details -
+- 10 curl hits per day (API GATEWAY + LAMBDA EXECUTED 10 times per day)
+- 10-12 logs files analyzed
+- 10 secs per Lambda run 
+- 10 SES mails sent per day
+- 10 times cloudwathc Logs pushed 
+
+
+PROMPT 10:
+--------------------------------------------------------------------------------
+can you explain me how the abnormal failure rate for 5XX count is being calculated in the Module 2 and what will happen if I set the env FAILURE_5XX_CRITICAL_LIMIT to 0.5?
+
+
+PROMPT 11:
+--------------------------------------------------------------------------------
+can you give practical example with sample URL's all combinations that will passor fail these rules as seen in screenshot that we have set 
+Also showing how perfect is the rules that we have set and how correctly ir identifies fake URL's
+[Attached Screenshot: Deep-Dive Analytics presentation slide outline]
+
+
+PROMPT 12:
+--------------------------------------------------------------------------------
+Api is added in safe keyword still why this URL is detected as suspicious 
+[Attached Screenshots: ai_analyzer.py source code snippet & Module 4 alert report flagging /voot-kids-playback-api/healthcheck]
+
+
+PROMPT 13:
+--------------------------------------------------------------------------------
+What this means 
+ThreadPoolExecutor, 10 workers
+
+
+PROMPT 14:
+--------------------------------------------------------------------------------
+How lambda is analysing the logs from S3 expalin
+================================================================================
